@@ -9,11 +9,11 @@ This project targets a critical e-commerce business bottleneck: **Cart Abandonme
 * **Visual Modelling & UX:** ChatGPT UI/UX Engine (Wireframing)
 
 ## 📂 Project Deliverables
-* 📄 **[Business Requirement Document (BRD)](./Business_Requirement_Document.txt):** Full text documentation featuring project scope, detailed User Stories, and rigorous Acceptance Criteria.
+* 📄 **[Business Requirement Document (BRD)](./BUSINESS REQUIREMENT DOCUMENT.txt):** Full text documentation featuring project scope, detailed User Stories, and rigorous Acceptance Criteria.
 * 🎨 **Visual Wireframe Layout:** (Displayed below)
 
 ### 📱 Low-Fidelity Mobile Checkout Wireframe
-![Checkout Wireframe](./checkout_wireframe.png)
+![Checkout Wireframe](./checkout_wireframe.pn.jpg)
 
 ## 🎯 Business Impact & Value Add
 * **Friction Reduction:** Reduced average checkout form completion fields from 11 down to 5.
