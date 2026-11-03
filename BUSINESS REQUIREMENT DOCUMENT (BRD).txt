@@ -1,0 +1,52 @@
+BUSINESS REQUIREMENT DOCUMENT (BRD)
+
+Project Name: E-Commerce Checkout Journey Optimization
+Document Version: 1.0  
+Author: BALIJA GEYASRI 
+ 
+
+----------------------------------------------------------------------
+1. PROJECT OVERVIEW & OBJECTIVE
+----------------------------------------------------------------------
+The objective of this project is to optimize the digital e-commerce checkout journey to combat high cart abandonment rates. By analyzing user drop-offs, the system will introduce a frictionless "Guest Checkout" flow and a secure "1-Click Express Payment" mechanism. The business target is to reduce checkout completion time by 40% and increase overall conversions by 15%.
+
+----------------------------------------------------------------------
+2. PROJECT SCOPE
+----------------------------------------------------------------------
+* In-Scope:
+  - Designing a single-page streamlined checkout layout.
+  - Implementing an automated "Checkout as Guest" pathway.
+  - Integrating UPI, Credit/Debit card tokenization for 1-click returning payments.
+* Out-of-Scope:
+  - Core inventory management backend logic.
+  - Post-purchase order tracking and logistics partner integration.
+
+----------------------------------------------------------------------
+3. USER STORIES & ACCEPTANCE CRITERIA
+----------------------------------------------------------------------
+USER STORY 1: Guest Checkout Pathway
+- As a: First-time e-commerce shopper
+- I want to: Complete my transaction without being forced to create an account
+- So that: I can check out quickly without password friction.
+
+Acceptance Criteria:
+  1. The system must display a prominent "Checkout as Guest" option on the initial cart page.
+  2. The guest flow must strictly require only 3 core data points: Email, Shipping Address, and Phone Number.
+  3. The system must not create a permanent profile or require password setup during this transaction.
+
+USER STORY 2: 1-Click Express Payment
+- As a: Returning saved customer
+- I want to: Securely use my previously saved payment method in one click
+- So that: I don't have to re-enter billing or card details every time.
+
+Acceptance Criteria:
+  1. The system must provide a checkbox option to "Securely save card for future payments" during checkout.
+  2. For returning users with saved details, a primary "Express Checkout" button must bypass traditional form-filling steps.
+  3. The system must invoke the native UPI app or pre-saved card vault seamlessly upon clicking.
+
+----------------------------------------------------------------------
+4. FUNCTIONAL & SYSTEM REQUIREMENTS
+----------------------------------------------------------------------
+- FR-01: Form Field Minimization: The optimized screen must collapse traditional address fields into an inline autocomplete address bar using location APIs.
+- FR-02: Real-Time Input Validation: Inline error flags must instantly validate email strings (e.g., matching text@domain.com) and 10-digit mobile numbers before submission.
+- FR-03: Dynamic Payment Routing: The gateway must support instantaneous failover to an alternative payment processor if the primary UPI/NetBanking router encounters latency > 3 seconds.
